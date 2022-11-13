@@ -7,10 +7,14 @@
  * 
  * untuk kode selengkapnya silahkan kunjungi : https://github.com/ahmadarif/medium-nest-app
  */
+ import * as cookieParser from 'cookie-parser';
 import { ApplicationContext } from './app.context';
 
 async function bootstrap() {
   const app = await ApplicationContext();
+
+  app.use(cookieParser());
+  
   await app.listen(3000);
 }
 
