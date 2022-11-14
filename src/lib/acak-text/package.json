@@ -1,0 +1,22 @@
+{
+  "name": "@lahirwisada/nest-hashing",
+  "version": "1.0.0",
+  "description": "provide hash",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lahirwisada",
+    "nest-hashing"
+  ],
+  "author": "lahir wisada",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/common": "^9.2.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9"
+  }
+}

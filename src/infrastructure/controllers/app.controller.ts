@@ -1,5 +1,5 @@
 import { Controller, Get, Param } from '@nestjs/common';
-import { AppService } from '../../infrastructure/services/app.service';
+import { AppService } from '../services/app.service';
 
 @Controller()
 export class AppController {
@@ -8,6 +8,16 @@ export class AppController {
   @Get()
   getHello(): string {
     return this.appService.getHello();
+  }
+
+  @Get("/encode")
+  encode(): string{
+    return this.appService.showEncode();
+  }
+
+  @Get("/decode")
+  decode(): string{
+    return this.appService.showDecode();
   }
 
   @Get("/show/:name")
